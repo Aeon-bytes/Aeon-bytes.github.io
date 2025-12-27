@@ -33,6 +33,10 @@ h1 {
     line-height: 4rem;
 }
 
+h2 {
+    margin: 18px 0px;
+}
+
 main {
     margin: 20px 0px;
     background-color: var(--light);
@@ -40,11 +44,12 @@ main {
 }
 
 section {
-    margin: 40px 0px;
+    margin: 20px 0px;
 }
 
 p {
     margin: 20px 0px;
+    text-align: justify;
 }
 
 footer {
@@ -83,8 +88,8 @@ footer {
 }
 
 .topic-block {
+    margin: 20px 10px;
     display: block;
-    max-width: 50%;
     padding: 2rem;
     border-radius: 10px;
     background-color: var(--primary-light);
@@ -92,13 +97,39 @@ footer {
 }
 
 .topic-block2 {
+    margin: 20px 10px;
     display: block;
-    max-width: 50%;
     padding: 2rem;
     border-radius: 10px;
     background-color: var(--light);
     box-shadow: 0 4px 10px var(--box-shadow);
 }
+
+.small-block {
+    margin: 10px;
+    display: inline-block;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: var(--light);
+    box-shadow: 0 4px 10px var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.small-block:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.half-card {
+    max-width: 50%;
+}
+
+/* .skills {
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+
 
 .font {
     font-family: 'Gloria Hallelujah', cursive;
