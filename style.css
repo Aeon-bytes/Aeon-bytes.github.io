@@ -33,22 +33,18 @@ body {
     margin: auto;
     font-size: 18px;
     line-height: 1.8rem;
+    background-color: var(--light);
 }
 
 h1 {
+    font-size: 130px;
     margin: 24px 0px;
-    line-height: 4rem;
+    line-height: 12rem;
+    font-family: 'trajan-pro-3', sans-serif;
 }
 
 h2 {
     margin: 18px 0px;
-}
-
-main {
-    max-width: 1100px;
-    margin: 20px auto;
-    background-color: var(--light);
-    padding: 0px 40px;
 }
 
 section {
@@ -71,12 +67,10 @@ footer {
 
 .nav-bar {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px 60px;
+    padding: 20px 40px;
     background: var(--primary-gradient);
-    position: sticky;
-    top: 0;
 }
 
 .nav-bar-items,
@@ -93,12 +87,15 @@ footer {
     font-weight: 600;
 }
 
-.footer-bar-items a {
-    color: var(--light);
+.contents {
+    max-width: 1100px;
+    margin: 20px auto;
+    padding: 0px 40px;
 }
 
-.topic-block-purple {
-    margin: 20px 10px;
+
+.topic-block-primary {
+    margin: 100px 10px;
     display: block;
     padding: 2rem;
     border-radius: 10px;
@@ -108,7 +105,7 @@ footer {
 }
 
 .topic-block {
-    margin: 20px 10px;
+    margin: 100px 10px;
     display: block;
     padding: 2rem;
     border-radius: 10px;
@@ -128,18 +125,17 @@ footer {
 
 .small-block:hover,
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-}
-
-.half-card {
-    max-width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    transform: translateY(-5px);
+    box-shadow: none;
 }
 
 .font {
     font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.6rem;
+}
+
+.font2 {
+    font-family: 'trajan-pro-3', sans-serif;
 }
 
 .gallery {
@@ -175,6 +171,10 @@ footer {
     font-size: 1em;
     line-height: 1.6;
     color: #666;
+}
+
+.footer-bar-items a {
+    color: var(--light);
 }
 
 /* responsive style */
