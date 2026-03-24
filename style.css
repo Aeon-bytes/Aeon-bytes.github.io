@@ -37,32 +37,30 @@ body {
 }
 
 h1 {
-    font-size: 130px;
-    margin: 24px 0px;
+    font-size: 10rem;
+    margin: 24px 0;
     line-height: 12rem;
     font-family: 'trajan-pro-3', sans-serif;
 }
 
 h2 {
-    margin: 18px 0px;
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 3rem;
+    padding: 30px;
+}
+
+h3 {
+    margin: 14px 0;
 }
 
 section {
-    margin: 20px 0px;
+    margin: 20px 0;
 }
 
 p {
-    margin: 20px 0px;
+    margin: 20px 0;
     text-align: justify;
-}
-
-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 60px;
-    background: linear-gradient(135deg, var(--secondary-1), var(--primary-start));
-    color: white;
 }
 
 .nav-bar {
@@ -75,28 +73,38 @@ footer {
 
 .nav-bar-items,
 .footer-bar-items {
-    text-decoration: none;
     list-style: none;
     display: flex;
     gap: 30px;
 }
 
-.nav-bar-items a {
+.nav-bar-items a,
+.footer-bar-items a {
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
+.heading-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+}
+
 .contents {
     max-width: 1100px;
     margin: 20px auto;
-    padding: 0px 40px;
+    padding: 0 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
 }
 
-
-.topic-block-primary {
-    margin: 100px 10px;
-    display: block;
+.topic-block-profile {
+    /* margin: 100px 10px; */
     padding: 2rem;
     border-radius: 10px;
     background: var(--primary-gradient);
@@ -105,8 +113,7 @@ footer {
 }
 
 .topic-block {
-    margin: 100px 10px;
-    display: block;
+    /* margin: 100px 10px; */
     padding: 2rem;
     border-radius: 10px;
     background-color: var(--secondary-3);
@@ -145,14 +152,9 @@ footer {
     padding: 20px;
 }
 
-.card-container {
-    perspective: 1000px;
-    height: 350px;
-}
-
 .card {
     margin: 10px;
-    padding: 20px 20px;
+    padding: 20px;
     border-radius: 10px;
     align-content: center;
     background-color: white;
@@ -173,12 +175,16 @@ footer {
     color: #666;
 }
 
-.footer-bar-items a {
-    color: var(--light);
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    background: linear-gradient(135deg, var(--secondary-1), var(--primary-start));
+    color: white;
 }
 
-/* responsive style */
-/* change font size, padding, margin, height, alignment, width here */
+/* Responsive styles */
 
 @media (max-width: 768px) {
     .half-card {
@@ -191,6 +197,6 @@ footer {
     }
 
     main {
-        padding: 0px 20px;
+        padding: 0 20px;
     }
 }
